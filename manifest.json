@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "postured",
+    "version": "1.0",
+    "description": "Reminds you to check your posture.",
+    "icons": {
+        "48": "icons/yoga.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://*.mozilla.org/*"],
+            "js": ["postured.js"]
+        }
+    ]
+}
